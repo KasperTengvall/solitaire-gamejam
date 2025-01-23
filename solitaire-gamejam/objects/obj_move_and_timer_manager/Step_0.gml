@@ -25,10 +25,15 @@ for (var _i = 0; _i < _base_no; ++_i;)
 	}
 }
 
-if (bases_left <= 0)
-{
-	global.winner = true;
+if (bases_left <= 0) {
+    if (global.current_round < global.total_rounds) {
+        reset_round(); // Call the global function directly, or use instance_find as needed
+    } else {
+        global.winner = true; // End the game
+        state_winner(); // Trigger the winner state
+    }
 }
+
 
 
 

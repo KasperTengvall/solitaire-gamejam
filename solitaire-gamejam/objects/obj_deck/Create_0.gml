@@ -1,10 +1,9 @@
 /// @description Initialise variables and sort out what cards are available.
 // Inherit the parent event
 event_inherited();
-
 // Cheater mode. For debug.
 // Sorts the entire deck in order from top to bottom.
-cheater = false;
+cheater = true;
 
 // Variables.
 card_holder =[];  // This is used to hold cards that we have pulled from our deck, but have not entered the play area.

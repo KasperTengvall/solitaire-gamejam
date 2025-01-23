@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":0,
+  "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -116,6 +116,7 @@
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
     {"id":{"name":"rm_play","path":"rooms/rm_play/rm_play.yy",},},
     {"id":{"name":"menu_card_swap","path":"scripts/menu_card_swap/menu_card_swap.yy",},},
+    {"id":{"name":"scr_reset_round","path":"scripts/scr_reset_round/scr_reset_round.yy",},},
     {"id":{"name":"transfer_stack","path":"scripts/transfer_stack/transfer_stack.yy",},},
     {"id":{"name":"seq_3_card_draw","path":"sequences/seq_3_card_draw/seq_3_card_draw.yy",},},
     {"id":{"name":"seq_auto_complete_pop_up","path":"sequences/seq_auto_complete_pop_up/seq_auto_complete_pop_up.yy",},},
