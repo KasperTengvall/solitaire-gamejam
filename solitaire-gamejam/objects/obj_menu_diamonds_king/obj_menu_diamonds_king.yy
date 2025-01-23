@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_menu_diamond_king",
-    "path":"sprites/spr_menu_diamond_king/spr_menu_diamond_king.yy",
+    "name":"SPR_menu_notebook_diamond_king",
+    "path":"sprites/SPR_menu_notebook_diamond_king/SPR_menu_notebook_diamond_king.yy",
   },
   "spriteMaskId":null,
   "visible":true,

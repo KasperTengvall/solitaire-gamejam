@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7f6ca067-9c10-4eeb-ab71-4b9500965075","name":"7f6ca067-9c10-4eeb-ab71-4b9500965075","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"46d21dd3-e0e7-4dd4-bac5-f995185096b8","name":"46d21dd3-e0e7-4dd4-bac5-f995185096b8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":360,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"852818d0-67d0-437f-bfee-c4e13408f67b","blendMode":0,"displayName":"default","isLocked":false,"name":"852818d0-67d0-437f-bfee-c4e13408f67b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"9ea2a633-4b41-4ed2-8a53-b08d2d279f62","blendMode":0,"displayName":"default","isLocked":false,"name":"9ea2a633-4b41-4ed2-8a53-b08d2d279f62","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_diamonds_6",
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Diamonds",
-    "path":"folders/Sprites/Game Screen/Cards/Diamonds.yy",
+    "name":"Notebook_Deck_Diamonds",
+    "path":"folders/Sprites/Notebook_Deck/Notebook_Deck_Diamonds.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7f6ca067-9c10-4eeb-ab71-4b9500965075","path":"sprites/spr_diamonds_6/spr_diamonds_6.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3f3a292d-0a29-44c0-bfa3-d9ff608765ef","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"46d21dd3-e0e7-4dd4-bac5-f995185096b8","path":"sprites/spr_diamonds_6/spr_diamonds_6.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"cfbc711e-4faa-40ac-9663-4b044df5a96c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

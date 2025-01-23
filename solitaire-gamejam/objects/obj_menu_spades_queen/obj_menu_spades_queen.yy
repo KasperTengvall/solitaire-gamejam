@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_menu_spades_queen",
-    "path":"sprites/spr_menu_spades_queen/spr_menu_spades_queen.yy",
+    "name":"SPR_menu_notebook_spades_queen",
+    "path":"sprites/SPR_menu_notebook_spades_queen/SPR_menu_notebook_spades_queen.yy",
   },
   "spriteMaskId":null,
   "visible":true,

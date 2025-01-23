@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_menu_diamonds_4",
-    "path":"sprites/spr_menu_diamonds_4/spr_menu_diamonds_4.yy",
+    "name":"SPR_menu_notebook_diamond_4",
+    "path":"sprites/SPR_menu_notebook_diamond_4/SPR_menu_notebook_diamond_4.yy",
   },
   "spriteMaskId":null,
   "visible":true,

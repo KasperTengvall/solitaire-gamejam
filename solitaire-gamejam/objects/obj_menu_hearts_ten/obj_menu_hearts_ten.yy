@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_menu_hearts_10",
-    "path":"sprites/spr_menu_hearts_10/spr_menu_hearts_10.yy",
+    "name":"SPR_menu_notebook_hearts_10",
+    "path":"sprites/SPR_menu_notebook_hearts_10/SPR_menu_notebook_hearts_10.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_menu_clubs_jack",
-    "path":"sprites/spr_menu_clubs_jack/spr_menu_clubs_jack.yy",
+    "name":"SPR_menu_notebook_clubs_jack",
+    "path":"sprites/SPR_menu_notebook_clubs_jack/SPR_menu_notebook_clubs_jack.yy",
   },
   "spriteMaskId":null,
   "visible":true,
