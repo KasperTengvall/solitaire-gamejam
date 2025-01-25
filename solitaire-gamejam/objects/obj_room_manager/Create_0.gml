@@ -2,11 +2,14 @@
 // Lets initialise our globals which are fairly self-explanatory.
 global.pause = false; // If we're paused or not.
 global.winner = false; // If we've won or not.
-global.loser = false; // If we've lost or not.
-global.current_round = 1;
-global.total_rounds = 5; // Total number of rounds
+global.loser = false; 
+global.round = 1; 
+global.bool = false// Set round to 1 when the game starts
+
+// If we've lost or not.
 // seq holds whatever menu we need to have up, whether that be paused, winner or loser.
 seq = NaN;
+
 // These layers each hold assets used in the respective screens. Mainly the dim black background.
 pause_instances_id = layer_get_id("Pause_Instances");
 pause_assets_id = layer_get_id("Pause_screen");
@@ -39,8 +42,7 @@ state_unpaused = function()
 
 state_winner = function()
 {
-    if (global.current_round == global.total_rounds)
-    {
+
         // Final victory screen logic
         if (audio_is_playing(snd_game_music))
         {
@@ -56,7 +58,7 @@ state_winner = function()
             seq = layer_sequence_create(win_instances_id, room_width / 2, room_height / 2, seq_you_win_pop_up);
         }
         layer_set_visible(win_assets_id, true);
-    }
+    
 };
 
 state_loser = function()
@@ -82,3 +84,4 @@ state_loser = function()
 	
 	layer_set_visible(win_assets_id, true);
 }
+

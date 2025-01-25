@@ -27,9 +27,10 @@ for (var _i = 0; _i < _base_no; ++_i;)
 
 if (bases_left <= 0) {
 
-        room_goto(rm_play2);// Call the global function directly, or use instance_find as needed
+       global.winner = true;
     
 }
+
 
 // If the player clicks the solve button this becomes true.
 /*if (bool_solve)

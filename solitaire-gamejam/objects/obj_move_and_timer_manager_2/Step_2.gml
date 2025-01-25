@@ -28,6 +28,5 @@ if (mouse_check_button_released(mb_left))
 		fail = true;
 	}
 
-	// If it didnt fail at any point.
 
 }

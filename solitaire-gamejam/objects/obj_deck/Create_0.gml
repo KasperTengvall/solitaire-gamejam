@@ -1,10 +1,11 @@
 /// @description Initialise variables and sort out what cards are available.
 // Inherit the parent event
 event_inherited();
+
 // Cheater mode. For debug.
 // Sorts the entire deck in order from top to bottom.
-cheater = false;
-
+cheater = true;
+global.card_name = [];
 // Variables.
 card_holder =[];  // This is used to hold cards that we have pulled from our deck, but have not entered the play area.
 				  
@@ -233,9 +234,5 @@ check_for_impossible_game = function()
 	
 	// Game over.
 	// Create the lose button.
-	if !(instance_exists(obj_lose_button))
-	{
-		var _layer = layer_get_id("Instances");
-		layer_sequence_create(_layer,room_width * 0.925, room_height * 0.925, seq_you_lose_button_pop_up);
-	}
+
 }

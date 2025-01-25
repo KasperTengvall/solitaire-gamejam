@@ -22,7 +22,7 @@ else
 			state_winner();
 		}
 	}
-	else if (global.loser == true)
+	else if (global.loser == true || global.moves == 1000)
 	{
 		state_loser();
 	}
@@ -36,4 +36,7 @@ if (keyboard_check_pressed(vk_escape))
 {
 	window_set_fullscreen(!window_get_fullscreen());
 }
+
+
+
 

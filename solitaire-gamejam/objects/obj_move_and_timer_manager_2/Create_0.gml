@@ -3,6 +3,7 @@
 // Our timer, used for keeping track of how long the user is taking.
 global.timer = 60;
 
+
 // Our delay, used to add a delay between each carp lerping up to it's base at the top of the screen 
 // during our auto solve. Adds to the satisfaction.
 delay = 0;
