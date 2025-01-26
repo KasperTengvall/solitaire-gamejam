@@ -28,7 +28,7 @@ if (mouse_check_button_pressed(mb_left)) {
             // Transition to the next room
             var next_room = scr_get_next_room();
             if (next_room != -1) {
-				show_debug_message("Transitioning to next room...");
+				show_debug_message("Transitioning to next room..." + string(next_room));
                 room_goto(next_room);
             }
         }

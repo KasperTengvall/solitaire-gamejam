@@ -18,18 +18,18 @@ face = spr_card_back;
 // Let's also figure out what our card color is so we can represent it better.
 black = (suit == 0) || (suit == 1); // Clubs and Spades are black.
 
-is_small = false;
+/*is_small = false;
 if (card_face == spr_clubs_1 || card_face == spr_spades_1 || card_face == spr_diamonds_1 || card_face == spr_hearts_1) {
     is_small = true;
 } else if (card_face == spr_clubs_2 || card_face == spr_spades_2 || card_face == spr_diamonds_2 || card_face == spr_hearts_2) {
     is_small = true;
 } else if (card_face == spr_clubs_3 || card_face == spr_spades_3 || card_face == spr_diamonds_3 || card_face == spr_hearts_3) {
     is_small = true;
-}
+}*/
 
 
 // Bonus applied flag
-bonus_applied = false;
+//bonus_applied = false;
 // Determine if the card is small (2, 3, or 4)
 
 

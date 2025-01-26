@@ -13,6 +13,7 @@ draw_set_color(#668F3D);
 // So here we draw "MOVES:" the + means to concatonate the lines as if they are the same line
 // the "\n" means new line.
 // Then doing $"{}" allows you to display what's stored in a variable.
+if (room != rm_powerup_selection) {
 draw_text(room_width * 0.925, room_height /3, "MOVES:"+"\n" + $"{global.moves}");
 
 // Get our seconds by flooring (rounding down) our timer.
@@ -39,6 +40,7 @@ _seconds = ((_seconds - ((_seconds div 60)*60)) >= 10) ? $"{_seconds - ((_second
 
 // Then finally after all our hard work, display the timer.
 draw_text(room_width * 0.925, room_height /1.7, _mins + ":" + _seconds);
+}
 /// @description Draw text to screen using our font
 
 

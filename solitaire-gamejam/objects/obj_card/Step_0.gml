@@ -21,7 +21,7 @@ if (destroy_self)
 	// Switch our state over to do so.
 	state = state_destroy;
 }
-var card_id = string(suit) + "_" + string(number);
+/*var card_id = string(suit) + "_" + string(number);
     if (flipped && is_small == true && !bonus_applied) {
 		
 		 if (!array_contains(global.card_name, card_id)) {
@@ -58,7 +58,7 @@ for (var i = 0; i < array_length(global.card_name); i++) {
     } else {
 			show_debug_message("Card already processed: " + card_id);
         
-    }
+    } 
         
 		
         // Set bonus_applied to true to prevent adding time again
@@ -69,7 +69,7 @@ for (var i = 0; i < array_length(global.card_name); i++) {
     // Reset bonus_applied when the card is no longer flipped (or after it has been processed)
     if (!flipped) {
         bonus_applied = false;
-    }
+    }*/
 
 
 // Call our (small) state machine.

@@ -18,6 +18,31 @@ delay_act = 0.25;
 // Used to normalise our time gain.
 last_second = get_timer()/1000000; 
 global.moves = 0;
+// === Apply Active Powerups ===
+for (var i = 0; i < array_length(global.active_powerups); i++) {
+    var powerup = global.active_powerups[i];
+    
+    // Only apply if not yet applied
+    if (!powerup.applied) {
+        switch (powerup.effect) {
+            case "add_time":
+                global.timer += 30; // Add 10 seconds to the timer (or any desired value)
+                show_debug_message("Applied powerup: " + powerup.name + ", effect: " + powerup.effect);
+                break;
+
+            case "add_moves":
+                global.moves += 3; // Add 3 moves (or any desired value)
+                show_debug_message("Applied powerup: " + powerup.name + ", effect: " + powerup.effect);
+                break;
+            case "reveal_card":
+                reveal_random_card(powerup.value); // Assumes this function exists
+                break;
+        }
+
+        // Mark this powerup as applied for this round
+        array_push(global.powerups_applied, i);
+    }
+}
 
 // Keep track of how many bases we have to complete!
 bases_left = 4;
@@ -97,4 +122,6 @@ solve = function()
 		delay -= delta_time / 200000;
 	}
 }
+
+
 
