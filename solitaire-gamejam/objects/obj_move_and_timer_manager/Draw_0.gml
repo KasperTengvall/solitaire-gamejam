@@ -39,6 +39,19 @@ _seconds = ((_seconds - ((_seconds div 60)*60)) >= 10) ? $"{_seconds - ((_second
 
 // Then finally after all our hard work, display the timer.
 draw_text(room_width * 0.925, room_height /1.7, _mins + ":" + _seconds);
+/// @description Draw text to screen using our font
+
+
+if (array_length(global.active_powerups) > 0) {
+    draw_set_font(fnt_righteous_small);
+    draw_set_color(c_white);
+    var _y = 50; // Start drawing text at y = 50
+    for (var i = 0; i < array_length(global.active_powerups); i++) {
+        var powerup = global.active_powerups[i];
+        draw_text(20, _y, "Active Powerup: " + powerup.name);
+        _y += 30; // Increment y-position for each powerup
+    }
+}
 
 // And reset our draw alignment.
 draw_set_halign(fa_left);

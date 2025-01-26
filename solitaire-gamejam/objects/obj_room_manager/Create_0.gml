@@ -6,6 +6,7 @@ global.loser = false;
 global.round = 1; 
 global.bool = false// Set round to 1 when the game starts
 
+
 // If we've lost or not.
 // seq holds whatever menu we need to have up, whether that be paused, winner or loser.
 seq = NaN;

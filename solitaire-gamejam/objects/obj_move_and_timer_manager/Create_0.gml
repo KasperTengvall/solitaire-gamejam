@@ -2,6 +2,11 @@
 
 // Our timer, used for keeping track of how long the user is taking.
 global.timer = 60;
+global.active_powerups = []; // Stores all active powerups
+global.powerups_applied = []; // Tracks which powerups have been applied this round
+global.powerup_cards = []; // Holds available powerup cards for selection
+global.current_room_index = 0; // Tracks the current room's index
+global.room_sequence = [rm_play, rm_play2, rm_play3, rm_play4, rm_play5]; // Define the room sequence
 
 // Our delay, used to add a delay between each carp lerping up to it's base at the top of the screen 
 // during our auto solve. Adds to the satisfaction.
