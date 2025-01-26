@@ -7,13 +7,13 @@ draw_set_halign(fa_center);
 draw_set_font(fnt_righteous);
 
 // Set the color (this is the same green we use for the buttons.)
-draw_set_color(#668F3D);
+draw_set_color(c_white);
 
 // Draw some text.
 // So here we draw "MOVES:" the + means to concatonate the lines as if they are the same line
 // the "\n" means new line.
 // Then doing $"{}" allows you to display what's stored in a variable.
-draw_text(room_width * 0.925, room_height /3, "MOVES:"+"\n" + $"{global.moves}");
+draw_text(room_width * 0.925, room_height /5, "MOVES:"+"\n" + $"{global.moves}");
 
 // Get our seconds by flooring (rounding down) our timer.
 var _seconds = floor(global.timer);
@@ -38,7 +38,7 @@ _mins = (_mins >= 10) ? $"{_mins}" : "0" + $"{_mins}";
 _seconds = ((_seconds - ((_seconds div 60)*60)) >= 10) ? $"{_seconds - ((_seconds div 60)*60)}" : "0" + $"{_seconds - ((_seconds div 60)*60)}";
 
 // Then finally after all our hard work, display the timer.
-draw_text(room_width * 0.925, room_height /1.7, _mins + ":" + _seconds);
+draw_text(room_width * 0.925, room_height /2.5, _mins + ":" + _seconds);
 /// @description Draw text to screen using our font
 
 // And reset our draw alignment.

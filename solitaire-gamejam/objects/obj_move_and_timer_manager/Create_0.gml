@@ -1,7 +1,7 @@
 /// @description Initialise Variables and Function
 
 // Our timer, used for keeping track of how long the user is taking.
-global.timer = 60;
+global.timer = 240;
 
 // Our delay, used to add a delay between each carp lerping up to it's base at the top of the screen 
 // during our auto solve. Adds to the satisfaction.
@@ -12,7 +12,7 @@ delay_act = 0.25;
 
 // Used to normalise our time gain.
 last_second = get_timer()/1000000; 
-global.moves = 200;
+global.moves = 150;
 
 // Keep track of how many bases we have to complete!
 bases_left = 4;

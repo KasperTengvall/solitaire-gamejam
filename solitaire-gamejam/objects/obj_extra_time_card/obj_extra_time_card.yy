@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite155",
-    "path":"sprites/Sprite155/Sprite155.yy",
+    "name":"spr_powerup_time",
+    "path":"sprites/spr_powerup_time/spr_powerup_time.yy",
   },
   "spriteMaskId":null,
   "visible":true,

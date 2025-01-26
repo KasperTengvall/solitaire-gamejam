@@ -7,4 +7,4 @@ if (hovered) {
 
 // Display the number of cards remaining
 draw_set_color(c_white);
-draw_text(room_width * 0.225, room_height /1.4, "x" + string(global.extra_time_cards));
+draw_text(room_width * 0.95, room_height /1.2, "x" + string(global.extra_time_cards));

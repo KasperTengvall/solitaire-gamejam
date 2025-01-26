@@ -6,4 +6,6 @@ if (clicked)
 	room_restart();
 	room_goto(0);
 	global.pause = false;
+	instance_destroy(obj_extra_move_card);
+	instance_destroy(obj_extra_time_card);
 }

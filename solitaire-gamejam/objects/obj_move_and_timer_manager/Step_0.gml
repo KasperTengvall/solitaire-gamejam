@@ -32,7 +32,7 @@ for (var _i = 0; _i < _base_no; ++_i) {
 // === Challenge Logic ===
 // Define challenge conditions based on the room
 if (room == rm_play) { // Room 1: Timer challenge
-    if (global.timer <= 0) {;
+    if (global.timer <= 0) {
         global.loser = true;
     }
 } else if (room == rm_play2) { // Room 2: Moves challenge
@@ -47,7 +47,7 @@ if (room == rm_play) { // Room 1: Timer challenge
 
 // === Round Progression ===
 var next_room = scr_get_next_room();
-if (bases_left == 3) {
+if (bases_left == 0) {
     if (room == rm_play3) {
         global.winner = true;
     } else {
