@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_powerup_card_data",
+  "%Name":"src_reveal_random_Card",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_powerup_card_data",
+  "name":"src_reveal_random_Card",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

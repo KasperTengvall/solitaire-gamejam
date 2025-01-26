@@ -86,5 +86,3 @@ state_loser = function()
 	layer_set_visible(win_assets_id, true);
 }
 
-
-show_debug_message("Current room ID: " + string(room));

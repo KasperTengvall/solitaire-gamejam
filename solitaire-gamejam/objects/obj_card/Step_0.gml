@@ -21,7 +21,7 @@ if (destroy_self)
 	// Switch our state over to do so.
 	state = state_destroy;
 }
-/*var card_id = string(suit) + "_" + string(number);
+var card_id = string(suit) + "_" + string(number);
     if (flipped && is_small == true && !bonus_applied) {
 		
 		 if (!array_contains(global.card_name, card_id)) {
@@ -29,6 +29,7 @@ if (destroy_self)
 			              // Add 5 seconds to the timer	
 			if (number == 0){
 				 global.timer += 10;
+				 src_reveal_random_Card();
 			}
 				if (number == 1){
 				 global.timer += 5;
@@ -69,7 +70,7 @@ for (var i = 0; i < array_length(global.card_name); i++) {
     // Reset bonus_applied when the card is no longer flipped (or after it has been processed)
     if (!flipped) {
         bonus_applied = false;
-    }*/
+    }
 
 
 // Call our (small) state machine.

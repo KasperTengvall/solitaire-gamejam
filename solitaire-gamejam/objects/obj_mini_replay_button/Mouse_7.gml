@@ -4,5 +4,5 @@ if (clicked)
 {
 	global.pause = false;
 	// Then the mouse button is released, restart the room.
-	room_restart();
+	room_goto(rm_play);
 }

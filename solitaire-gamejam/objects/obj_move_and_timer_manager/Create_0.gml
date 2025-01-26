@@ -2,11 +2,6 @@
 
 // Our timer, used for keeping track of how long the user is taking.
 global.timer = 60;
-global.active_powerups = []; // Stores all active powerups
-global.powerups_applied = []; // Tracks which powerups have been applied this round
-global.powerup_cards = []; // Holds available powerup cards for selection
-global.current_room_index = 0; // Tracks the current room's index
-global.room_sequence = [rm_play, rm_play2, rm_play3, rm_play4, rm_play5]; // Define the room sequence
 
 // Our delay, used to add a delay between each carp lerping up to it's base at the top of the screen 
 // during our auto solve. Adds to the satisfaction.
@@ -17,36 +12,10 @@ delay_act = 0.25;
 
 // Used to normalise our time gain.
 last_second = get_timer()/1000000; 
-global.moves = 0;
-// === Apply Active Powerups ===
-for (var i = 0; i < array_length(global.active_powerups); i++) {
-    var powerup = global.active_powerups[i];
-    
-    // Only apply if not yet applied
-    if (!powerup.applied) {
-        switch (powerup.effect) {
-            case "add_time":
-                global.timer += 30; // Add 10 seconds to the timer (or any desired value)
-                show_debug_message("Applied powerup: " + powerup.name + ", effect: " + powerup.effect);
-                break;
-
-            case "add_moves":
-                global.moves += 3; // Add 3 moves (or any desired value)
-                show_debug_message("Applied powerup: " + powerup.name + ", effect: " + powerup.effect);
-                break;
-            case "reveal_card":
-                reveal_random_card(powerup.value); // Assumes this function exists
-                break;
-        }
-
-        // Mark this powerup as applied for this round
-        array_push(global.powerups_applied, i);
-    }
-}
+global.moves = 200;
 
 // Keep track of how many bases we have to complete!
 bases_left = 4;
-
 
 // This whole section is dedicated to solving the game automatically when close enough to the end.
 // Setting this to true will trigger the auto solver. This only functions if all cards are on the board
