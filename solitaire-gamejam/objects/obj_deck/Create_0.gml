@@ -4,7 +4,7 @@ event_inherited();
 
 // Cheater mode. For debug.
 // Sorts the entire deck in order from top to bottom.
-cheater = true;
+cheater = false;
 global.card_name = [];
 // Variables.
 card_holder =[];  // This is used to hold cards that we have pulled from our deck, but have not entered the play area.
